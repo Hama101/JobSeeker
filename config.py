@@ -21,15 +21,14 @@ load_dotenv()
 
 class Settings(BaseSettings):
     
-
+    # --- Application settings ---
     PROJECT_NAME: str = os.environ.get("PROJECT_NAME", "Job Seeker")
     SECRET_KEY: str = os.environ.get("SECRET_KEY", "secret")
-
-    UNSPLASH_CLIENT_ID: str = os.environ.get("UNSPLASH_CLIENT_ID", None)
-    UNSPLASH_URL : str = os.environ.get("UNSPLASH_URL", "https://api.unsplash.com/search/photos/?")
-
     DEBUG: Optional[bool] = bool(int(os.environ.get("DEBUG", 0)))
 
+    # --- API settings ---
+    UNSPLASH_CLIENT_ID: str = os.environ.get("UNSPLASH_CLIENT_ID", None)
+    UNSPLASH_URL : str = os.environ.get("UNSPLASH_URL", "https://api.unsplash.com/search/photos/?")
     JOB_URL : str = os.environ.get("JOB_URL", "https://careers.google.com/api/v3/search/?")
 
 
@@ -45,6 +44,13 @@ class Settings(BaseSettings):
     TITLE: str = os.environ.get("TITLE", "Job Searcher")
     ICON: str = os.environ.get("ICON", "icon.ico")
 
+    # --- DIRS ---
+    ASSETS_DIR : str = os.environ.get("ASSETS_DIR", "assets")
+    IMAGES_DIR : str = os.environ.get("IMAGES_DIR", "images")
+    LANGUAGES_LANGS_DIR : str = os.environ.get("LANGUAGES_LANGS_DIR", "languages_logs")
+    
+    # --- Files ---
+    CURRENT_PATH : str = os.path.dirname(os.path.abspath(__file__))
 
     @property
     def database_url(self):

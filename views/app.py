@@ -4,12 +4,13 @@ import os
 from PIL import Image
 from config import Settings
 
-from controllers.file_uploader import FileUploader
+from controllers.filer_controller import FileUploader , ImageProvider
 from providers.googler import GoogleJobBank
 from providers.splasher import Splasher
 from tkinter import filedialog
 # webbrowser
 import webbrowser
+
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -27,7 +28,7 @@ class App(customtkinter.CTk):
         self.grid_columnconfigure(1, weight=1)
 
         # load images with light and dark mode image
-        image_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../test/manual_integration_tests/test_images")
+        image_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), self.settings.CURRENT_PATH, self.settings.IMAGES_DIR)
         self.logo_image = customtkinter.CTkImage(
             Image.open(os.path.join(image_path, "CustomTkinter_logo_single.png")),
             size=(26, 26)
@@ -192,26 +193,43 @@ class App(customtkinter.CTk):
 
         # add a header saying choose your skills
         customtkinter.CTkLabel(self.second_frame, text="Choose your skills", font=customtkinter.CTkFont(size=15, weight="bold")).grid(row=0, column=0, columnspan=4, padx=20, pady=10)
-
+        
+        # keep only the skills that we have images for it
+        skills = [skill for skill in skills if ImageProvider(skill).get_image_path is not None]
         # make skills a list of lists each containing 6 skills
-        skills = [skills[i:i + 6] for i in range(0, len(skills), 6)]
-
+        skills = [
+            skills[i:i + 6] for i in range(0, len(skills), 4)
+        ]
         # create a list of buttons
         for skill in skills:
             for i in range(len(skill)):
+                text = skill[i]
+                
+                # set the image for the button
+                image_path = ImageProvider(text).get_image_path
+                image = Image.open(image_path)
+                image_tk = customtkinter.CTkImage(
+                    light_image=image ,
+                    dark_image=image ,
+                    size=(100, 100)
+                )
+                
                 skill[i] = customtkinter.CTkButton(
                     self.second_frame,
-                    text=skill[i],
+                    text=text,
                     compound="top",
-                    command=lambda skill=skill[i]: self.skill_button_event(skill)
+                    command=lambda skill=text: self.skill_button_event(skill),
+                    image=image_tk,
                 )
                 # show it under the header
                 skill[i].grid(row=skills.index(skill) + 1, column=i, padx=20, pady=10)
+
+                
+    
         # open the second frame
         self.select_frame_by_name("skills")
 
     def show_jobs(self, jobs):
-        print("show jobs : ", len(jobs))
         # remove all previous widgets
         for widget in self.third_frame.winfo_children():
             widget.destroy()
@@ -230,10 +248,12 @@ class App(customtkinter.CTk):
                     text=job[i].get("title"),
                     compound="top",
                     # just open the link in the browser
-                    command=lambda job=job[i]: webbrowser.open(job.get("apply_url"))
+                    command=lambda job=job[i]: webbrowser.open(job.get("apply_url")),
+                    anchor="w",
                 )
                 # show it under the header
                 job[i].grid(row=jobs.index(job) + 1, column=i, padx=20, pady=10)
+            
         # open the third frame
         self.select_frame_by_name("jobs")
 
