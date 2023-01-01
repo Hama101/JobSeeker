@@ -22,7 +22,7 @@ https://www.loom.com/share/5e45de34128c495dae0a6dc11a34e8f5
 # AUTHOR
 Created at 🌙 by Hama101
 - my profile : [Hamdi Mohamed ](https://github.com/Hama101).
-### 2021 FUN FACTS : 
-- The witcher 2 is the best show for 2021.
-- Spider-man no way home is the best movie for 2021.
-- It takes two game of the year ❤ .
+### 2022 FUN FACTS : 
+- Alice in the borderlands is the best show.
+- Batman 2020 is the best movie.
+- God of war ragnarok is the game of the year ❤ .
