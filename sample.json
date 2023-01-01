@@ -1,0 +1,70 @@
+{
+    "count": 228,
+    "next_page": 2,
+    "page_size": 20,
+    "jobs": [
+        {
+            "id": "jobs/127279592277713606",
+            "title": "Software Developer Intern, PhD, Summer 2023",
+            "categories": [
+                "SOFTWARE_ENGINEERING"
+            ],
+            "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckZfWyCKFCy1XqkDdMHAcL2KxKqh5IYDeKavLcB9CzQVIEjsA4ixdm4gdnvfg6yyNkP8rOKdyicFGTWyCtcazsX8GXT8uyQZCYi6RJBZO4i2vbuUcZl-8-oI_23WteA%3D%3D_V2&jobTitle=Software+Developer+Intern&loc=CA",
+            "responsibilities": "<ul>\n<li>Create and support a productive and innovative team including working with peers, managers, and teams.</li>\n<li>Develop scripts to automate routine tasks.</li>\n<li>Analyze information and evaluate results to choose the best solution to effectively solve challenges.</li>\n<li>Apply knowledge gained in computer science courses to real world challenges. </li>\n</ul>",
+            "qualifications": "<h3>Minimum qualifications:</h3><ul>\n<li>Pursuing a PhD degree program in Computer Science, or related technical field.</li>\n<li>Experience programming in one or more of the following: C/C++, Java, or Python.<br></li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Currently attending a degree program in Canada and available to work full time for a minimum of 12 weeks outside of university term time.</li>\n<li>Returning to a degree program after completion of the internship.</li>\n<li>Experience in computer science, with knowledge in data structures, algorithms, and software design.<br></li>\n<li> Programming experience in one or more of the following: C/C++, C#, Java, JavaScript, Python Objective C, Go, or similar.<br></li>\n<li>Research experience in Algorithms, Architecture, Artificial Intelligence, Compilers, Database, Data Mining, Distributed Systems, Machine Learning, Networking, or Systems.<br></li>\n</ul>",
+            "company_id": "companies/ebbbf0d1-8121-483c-8f99-ee92597591fc",
+            "company_name": "Google",
+            "language_code": "en-US",
+            "locations": [
+                {
+                    "display": "Waterloo, ON, Canada",
+                    "lat": 43.4642578,
+                    "lon": -80.5204096,
+                    "address_lines": [
+                        "Waterloo, ON, Canada"
+                    ],
+                    "city": "Waterloo",
+                    "post_code": "",
+                    "country": "ON",
+                    "country_code": "CA",
+                    "is_remote": false
+                },
+                {
+                    "display": "Toronto, ON, Canada",
+                    "lat": 43.653226,
+                    "lon": -79.3831843,
+                    "address_lines": [
+                        "Toronto, ON, Canada"
+                    ],
+                    "city": "Toronto",
+                    "post_code": "",
+                    "country": "ON",
+                    "country_code": "CA",
+                    "is_remote": false
+                }
+            ],
+            "description": "<p>Join us for a unique 12-14 week paid internship that offers personal and professional development, an executive speaker series, and community-building. The Software Engineering Internship program will give you an opportunity to work on complex computer science solutions, develop scalable, distributed software systems, and also collaborate on multitudes of smaller projects that have universal appeal.<br></p>\n\n<p>We offer a range of internships in either Software Engineering or Site-Reliability Engineering across North America, including the US and Canada. Our recruitment team will determine where you fit best based on your resume.</p>\n\n<p><b>Software Developer Intern:</b>\n<br>As a key member of a versatile team, you will work on a specific project critical to Google’s needs. We need our engineers to be versatile, and enthusiastic in addressing problems as we continue to push technology forward. You will design, test, deploy, and maintain software solutions as you grow and evolve during your internship.</p>\n\n<p><b>Site Reliability Intern:</b>\n<br>Our engineers create, fix, extend, and scale the code to keep it working and to harden it against all the bad actors of the internet. We drive reliability and performance on a massive scale. You will work on software development projects to keep important business generating-critical systems up and running, from code-level troubleshooting of traffic anomalies to maintenance of our services, from monitoring and alerts to building automation infrastructure. </p><p>Google is and always will be an engineering company. We hire people with a broad set of technical skills who are ready to address some of technology's greatest challenges and make an impact on millions, if not billions, of users. At Google, engineers not only revolutionize search, they routinely work on massive scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. From Google Ads to Chrome, Android to YouTube, Social to Local, Google engineers are changing the world one technological achievement after another.</p>",
+            "education_levels": [
+                "DOCTORAL_OR_EQUIVALENT"
+            ],
+            "created": "2022-09-20T15:01:25.183Z",
+            "modified": "2022-12-07T11:20:16.709Z",
+            "publish_date": "2022-12-07T11:20:16.817Z",
+            "application_instruction": "<p><b>Please complete your application before February 24th, 2023.</b></p><p><b>Participation in the internship program requires that you are located in Canada for the duration of the internship program.</b></p><p>This internship is intended for students who are currently pursuing a PhD degree program in Computer Science or a related field with an anticipated graduation date on or after December 2023, depending on their program and unique circumstances.</p><p>To start the application process, you will need an updated CV or resume and a current unofficial or official transcript in English. Click on the “Apply” button on this page and provide the required materials in the appropriate sections (PDFs preferred):</p><ul><li>1. In the “Resume Section:” attach an updated CV or resume.</li><li>2. In the “Education Section:” attach a current or recent unofficial or official transcript in English.</li><ul><li>Under “Degree Status,” select “Now attending” to upload a transcript.</li></ul></ul>",
+            "locations_count": 2,
+            "additional_instructions": "Note: By applying to this position you will have an opportunity to share your preferred working location from the following: <b>Waterloo, ON, Canada; Toronto, ON, Canada</b>.",
+            "summary": "<ul>\n<li>Pursuing a PhD degree program in Computer Science, or related technical field.</li>\n<li>Experience programming in one or more of the following: C/C++, Java, or Python.<br></li>\n</ul>",
+            "building_pins": [
+                {
+                    "lat": 43.453957,
+                    "lon": -80.500193
+                },
+                {
+                    "lat": 43.650477,
+                    "lon": -79.383858
+                }
+            ],
+            "has_remote": false
+        }
+    ]
+}
